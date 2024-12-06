@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+
+<div class="container  ">
+    <div class="row justify-content-md-center">
+        <div class="card col-md-6 px-0 my-5">
+            <div class="card-header m-auto">
+                <h3 class="mb-0 py-2">
+                    {% trans "Singup" %} 
+                </h3>
+            </div>
+            <div class="cad-body p-3">
+                <form method='POST'>
+                    {% csrf_token %}
+                    {% include "form.html" with form=form %}
+                    <input class="btn btn-dark w-100 mt-3 btn-lg" type="submit" value="{% trans 'Singup' %} " />
+                </form>
+                <a class="btn btn-danger w-100 mt-3 btn-lg" href="{% url "social:begin" "google-oauth2" %}">Singup With Google+</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
