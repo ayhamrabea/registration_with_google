@@ -142,5 +142,5 @@ LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
 
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '228281805588-umtmchr5jqhinva2s7qveifhg49prhmj.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '228281805588-umtmchr5jqhinva2s7qveifhg49prhmj.apps.googleusercontent.com'
+# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
